@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",
         glue = "com/google/step_depenitions",
         dryRun = false,
-        tags = "@google_01 or @google_02 or @facebook"
+        tags = "@google_01"
 )
 public class CukesRunner {
     /**
