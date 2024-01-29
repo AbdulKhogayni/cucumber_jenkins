@@ -14,17 +14,15 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/feature",
         glue = "com/google/step_depenitions",
-        dryRun = false // //false=> run the test. true => check for missing steps
-        //tags = "@google_01"
-
-        /**
-         * Mvn command line
-         * -- to run a specific feature: mvn test -Dcucumber.options="src/test/resource/login.feature "feature path
-         * -- to run a specific scenario:mvn test -Dcucumber.options="feature file path:numbers starting"
-         *         Example: mvn test -Dcucumber.options="feature/google.feature:11"
-         * -- run with tag: mvn test -Dcucumber.options="--tags@smoke"
-        */
-
+        dryRun = false,
+        tags = "@google_01 or @google_02 or @facebook"
 )
 public class CukesRunner {
+    /**
+     * Mvn command line
+     * -- to run a specific feature: mvn test -Dcucumber.options="src/test/resource/login.feature "feature path
+     * -- to run a specific scenario:mvn test -Dcucumber.options="feature file path:numbers starting"
+     *         Example: mvn test -Dcucumber.options="feature/google.feature:11"
+     * -- run with tag: mvn test -Dcucumber.options="--tags@smoke"
+     */
 }

@@ -11,15 +11,3 @@ Feature: Navigation to facebook login page
       | UserName                      |  | Password         |
       | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
       | Khogyani20@gmail.com          |  | Afghanistan@2020 |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
-      | Khogyani20@gmail.com          |  | Afghanistan@2020 |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
-      | Khogyani20@gmail.com          |  | Afghanistan@2020 |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
-      | Khogyani20@gmail.com          |  | Afghanistan@2020 |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
-      | Khogyani20@gmail.com          |  | Afghanistan@2020 |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
-      | Khogyani20@gmail.com          |  | Afghanistan@2020 |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
-      | Khogyani20@gmail.com          |  | Afghanistan@2020 |
