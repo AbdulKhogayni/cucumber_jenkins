@@ -1,4 +1,4 @@
-package com.google.step_depenitions;
+package com.google.step_definitions;
 
 import com.google.utilities.DriverManager;
 import io.cucumber.java.After;

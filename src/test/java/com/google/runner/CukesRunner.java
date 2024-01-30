@@ -13,9 +13,10 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json" //generate a json execution report to be used for html report
         },
         features = "src/test/resources/feature",
-        glue = "com/google/step_depenitions",
-        dryRun = false,
-        tags = "@facebook or @google_01 or @google_02"
+        glue = "com/google/step_definitions",
+        dryRun = false
+        //tags = "@facebook or @google_01 or @google_02"
+        //definitions
 )
 public class CukesRunner {
     /**
