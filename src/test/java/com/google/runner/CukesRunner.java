@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/feature",
         glue = "com/google/step_definitions",
-        dryRun = false
-        //tags = "@facebook or @google_01 or @google_02"
-        //definitions
+        dryRun = false,
+        tags = "@facebook or @google_01 or @google_02"
+
 )
 public class CukesRunner {
     /**
