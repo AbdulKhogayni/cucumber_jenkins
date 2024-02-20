@@ -1,5 +1,6 @@
 package com.google.step_definitions;
 
+import com.google.pages.Google_Page;
 import com.google.utilities.ConfigurationReader;
 import com.google.utilities.DriverManager;
 import io.cucumber.java.en.Given;
@@ -21,5 +22,11 @@ public class GoogleHomePageStep {
     @Then("I verified expected title is {string}")
     public void iVerifiedExpectedTitleIs(String expectedTitle) {
         Assert.assertEquals(expectedTitle, DriverManager.getDriver().getTitle());
+    }
+
+    @Then("I send text {string}")
+    public void iSendText(String text) {
+        Google_Page page = new Google_Page();
+        page.searchBar.sendKeys(text);
     }
 }
