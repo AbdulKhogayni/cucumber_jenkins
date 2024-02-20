@@ -10,4 +10,5 @@ Feature: Navigation to google home page
   @google_02
   Scenario:
     Then I verified expected title is "Google"
-    Then I send text "Code in Java is fun"
+    And I send text "Code in Java"
+
