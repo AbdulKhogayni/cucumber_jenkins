@@ -1,6 +1,6 @@
 package com.google.step_definitions;
 
-import com.google.pages.Google_Page;
+import com.google.pages.GooglePage;
 import com.google.utilities.ConfigurationReader;
 import com.google.utilities.DriverManager;
 import io.cucumber.java.en.Given;
@@ -26,7 +26,7 @@ public class GoogleHomePageStep {
 
     @Then("I send text {string}")
     public void iSendText(String text) {
-        Google_Page page = new Google_Page();
+        GooglePage page = new GooglePage();
         page.searchBar.sendKeys(text);
     }
 }
