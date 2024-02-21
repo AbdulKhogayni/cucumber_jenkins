@@ -43,6 +43,5 @@ public class GoogleHomePageStep {
     @Then("from the result list click on {string} if available")
     public void fromTheResultListClickOnIfAvailable(String value) {
         page.searchResultList(page.searchResult, value);
-
     }
 }
