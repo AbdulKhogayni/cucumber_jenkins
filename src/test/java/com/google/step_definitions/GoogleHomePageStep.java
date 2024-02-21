@@ -33,7 +33,6 @@ public class GoogleHomePageStep {
 
     @Then("I should see the result")
     public void iShouldSeeTheResult() {
-        //GooglePage page = new GooglePage();
         System.out.println("Result count: " + page.searchResult.size());
         for (WebElement element : page.searchResult) {
             System.out.println(element.getText());
