@@ -6,6 +6,7 @@ import com.google.utilities.DriverManager;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class GoogleHomePageStep {
 
@@ -34,5 +35,9 @@ public class GoogleHomePageStep {
     public void iShouldSeeTheResult() {
         GooglePage page = new GooglePage();
         System.out.println("Result count: " + page.searchResult.size());
+        for (WebElement element : page.searchResult){
+            System.out.println(element.getText());
+        }
+
     }
 }
