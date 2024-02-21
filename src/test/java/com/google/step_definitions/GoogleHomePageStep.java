@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 public class GoogleHomePageStep {
+    GooglePage page = new GooglePage();
 
     @Given("I am in the google home page")
     public void i_am_in_the_google_home_page() {
@@ -27,17 +28,21 @@ public class GoogleHomePageStep {
 
     @Then("I send text {string}")
     public void iSendText(String text) {
-        GooglePage page = new GooglePage();
         page.searchBar.sendKeys(text);
     }
 
     @Then("I should see the result")
     public void iShouldSeeTheResult() {
-        GooglePage page = new GooglePage();
+        //GooglePage page = new GooglePage();
         System.out.println("Result count: " + page.searchResult.size());
-        for (WebElement element : page.searchResult){
+        for (WebElement element : page.searchResult) {
             System.out.println(element.getText());
         }
+    }
+
+    @Then("from the result list click on {string} if available")
+    public void fromTheResultListClickOnIfAvailable(String value) {
+        page.searchResultList(page.searchResult, value);
 
     }
 }
