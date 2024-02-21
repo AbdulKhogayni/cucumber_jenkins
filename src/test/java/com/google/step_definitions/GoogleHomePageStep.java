@@ -29,4 +29,10 @@ public class GoogleHomePageStep {
         GooglePage page = new GooglePage();
         page.searchBar.sendKeys(text);
     }
+
+    @Then("I should see the result")
+    public void iShouldSeeTheResult() {
+        GooglePage page = new GooglePage();
+        System.out.println("Result count: " + page.searchResult.size());
+    }
 }

@@ -11,4 +11,6 @@ Feature: Navigation to google home page
   Scenario:
     Then I verified expected title is "Google"
     And I send text "Code in Java"
+    Then I should see the result
+
 
