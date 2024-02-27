@@ -1,9 +1,6 @@
 package com.google.pages;
 
-import com.google.utilities.DriverManager;
-import io.cucumber.java.eo.Se;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -15,6 +12,7 @@ public class AmazonHomePage extends BaseTest {
     @FindBy(xpath = "//div[@id='nav-logo']")
     public WebElement amazon_Logo;
 
+    ////i[@aria-label='Amazon']
     @FindBy(id = "searchDropdownBox")
     public WebElement allDepartments;
 
@@ -33,5 +31,16 @@ public class AmazonHomePage extends BaseTest {
             System.out.println("Value not matched.");
         }
         Assert.assertEquals(defaultDepartment, actualValue);
+    }
+
+    public void getAllDepartmentsNames(WebElement allDepartments) {
+        int count = 0;
+        Select selectedDepartment = new Select(allDepartments);
+        List<WebElement> allDepartment = selectedDepartment.getOptions();
+        System.out.println("Count of departments: " + allDepartment.size());
+        for (WebElement each : allDepartment) {
+            count++;
+            System.out.println(count + ": " + each.getText());
+        }
     }
 }

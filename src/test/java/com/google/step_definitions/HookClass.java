@@ -20,7 +20,7 @@ public class HookClass {
     @After
     public void tearDownScenario(Scenario scenario) {
         System.out.println("AFTER method is running..");
-        if (scenario.isFailed()){
+        if (scenario.isFailed()) {
             byte[] image = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(image, "image/png", scenario.getName());
             System.out.println("AFTER - tearDown method is running after the scenario:" + scenario.getName());

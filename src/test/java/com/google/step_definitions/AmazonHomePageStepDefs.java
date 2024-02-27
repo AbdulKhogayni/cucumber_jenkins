@@ -6,8 +6,6 @@ import com.google.utilities.DriverManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.junit.Assert;
-import org.openqa.selenium.support.ui.Select;
 
 public class AmazonHomePageStepDefs {
     AmazonHomePage homePage = new AmazonHomePage();
@@ -25,5 +23,6 @@ public class AmazonHomePageStepDefs {
     @And("I verify default selected department is {string}")
     public void iVerifyDefaultSelectedDepartmentIs(String defaultDepartment) {
         homePage.getCurrentDepartment(homePage.allDepartments, defaultDepartment);
+        homePage.getAllDepartmentsNames(homePage.allDepartments);
     }
 }
