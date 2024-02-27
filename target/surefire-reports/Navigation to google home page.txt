@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Navigation to google home page
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.609 s - in Navigation to google home page

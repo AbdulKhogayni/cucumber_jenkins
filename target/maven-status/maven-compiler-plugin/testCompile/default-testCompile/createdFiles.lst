@@ -1,0 +1,9 @@
+com\google\pages\BaseTest.class
+com\google\step_definitions\FacebookPageStepDefs.class
+com\google\utilities\ConfigurationReader.class
+com\google\testes\ReadDataFromExcelTest.class
+com\google\utilities\DriverManager.class
+com\google\runner\CukesRunner.class
+com\google\pages\GooglePage.class
+com\google\step_definitions\GoogleHomePageStep.class
+com\google\step_definitions\HookClass.class
