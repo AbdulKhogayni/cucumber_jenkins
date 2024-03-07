@@ -1,24 +1,26 @@
 package com.google.runner;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+
 import org.junit.runner.RunWith;
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt", //store failed scenario names into rerun.txt file
-                "json:target/cucumber.json" //generate a json execution report to be used for html report
+                "json:target/cucumber.json", //generate a json execution report to be used for html report
+                "timeline:target/cucumber/threadcount" // store thread counts
         },
         features = "src/test/resources/feature",
         glue = "com/google/step_definitions",
         dryRun = false,
-        tags = "@facebook or @google_01 or @google_02 or @amazonLoginTest or @AmazonLoginTest"
-
+        tags = "@facebook or @google_01 or @google_02",
+        monochrome = true
 )
-public class CukesRunner {
+public class CukesRunner{
     /**
      * Mvn command line
      * -- to run a specific feature: mvn test -Dcucumber.options="src/test/resource/login.feature "feature path
