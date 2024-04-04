@@ -23,6 +23,6 @@ public class AmazonHomePageStepDefs {
     @And("I verify default selected department is {string}")
     public void iVerifyDefaultSelectedDepartmentIs(String defaultDepartment) {
         homePage.getCurrentDepartment(homePage.allDepartments, defaultDepartment);
-        homePage.getAllDepartmentsNames(homePage.allDepartments);
+        homePage.getAllDepartmentNames(homePage.allDepartments);
     }
 }

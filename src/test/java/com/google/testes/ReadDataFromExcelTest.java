@@ -16,5 +16,6 @@ public class ReadDataFromExcelTest {
 
         System.out.println("Abdul Qadeer = " + xssfSheet.getRow(1).getCell(0));
         FileInputStream in =  new FileInputStream(path);
+        in.close();
     }
 }

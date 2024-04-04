@@ -12,7 +12,6 @@ public class AmazonHomePage extends BaseTest {
     @FindBy(xpath = "//div[@id='nav-logo']")
     public WebElement amazon_Logo;
 
-    ////i[@aria-label='Amazon']
     @FindBy(id = "searchDropdownBox")
     public WebElement allDepartments;
 
@@ -33,7 +32,7 @@ public class AmazonHomePage extends BaseTest {
         Assert.assertEquals(defaultDepartment, actualValue);
     }
 
-    public void getAllDepartmentsNames(WebElement allDepartments) {
+    public void getAllDepartmentNames(WebElement allDepartments) {
         int count = 0;
         Select selectedDepartment = new Select(allDepartments);
         List<WebElement> allDepartment = selectedDepartment.getOptions();

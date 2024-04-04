@@ -8,5 +8,5 @@ Feature: Navigation to facebook login page
     And click on the sign in button
     Examples:
       | UserName                      |  | Password         |
-      | abdulqadeerabdullah@yahoo.com |  | Afghanistan@2020 |
+      | abdulQadeerAbdullah@yahoo.com |  | Afghanistan@2020 |
       | Khogyani20@gmail.com          |  | Afghanistan@2020 |
